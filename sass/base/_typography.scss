@@ -1,0 +1,43 @@
+.logo-header{
+    font-size: 3rem;
+    @include responsive (phone){
+        font-size: 5rem;
+        margin-top: 5rem;
+    }
+}
+.header-text{
+    width: 45%;
+   margin-top: 10rem;
+   @include responsive (tab-pot){
+    width: 75%;
+    }
+    @include responsive (phone){
+        min-width: 100%;
+    }
+}
+.header-primary{
+    font-size: 7rem;
+    line-height: 1.2;
+    @include responsive (tab-pot){
+        font-size: 4rem;
+    }
+}
+.header-paragraph{
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $color-paragraph;
+}
+.tertiary-header{
+    font-size: 3rem;
+    @include responsive (tab-pot){
+        font-size: 2.5rem;
+         }
+}
+.feature-paragraph{
+    line-height: 2;
+    font-size: 1.6rem;
+    @include responsive (tab-pot){
+        font-size: 1.2rem;
+         }
+}

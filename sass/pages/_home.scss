@@ -1,0 +1,11 @@
+.container{
+    margin: 5rem;
+    padding-left: 5rem;
+    @include responsive (phone){
+        margin: 0 auto;
+
+    }
+    @include responsive(phone-mini){
+        padding: 0 3rem;
+    }
+}

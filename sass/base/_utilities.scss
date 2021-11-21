@@ -1,0 +1,19 @@
+.big-white{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.small-white{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.bold-email{
+    font-weight: 700;
+}
+.container-bg{
+    width: 115rem;
+    object-fit: cover;
+    @include responsive (phone-mini){
+        width: 0;
+    }
+
+}

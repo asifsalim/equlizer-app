@@ -1,0 +1,23 @@
+$color-paragraph:#656368;
+$color-body-font:#181825;
+$color-feature-card:#FA7353;
+$color-feature-text:#FFF8F5;
+
+@mixin responsive($device){
+    @if $device == phone-mini {
+        @media (max-width: 35em) {@content}; //555px/16px= 35em
+    }
+    @if $device == phone {
+        @media (max-width: 48.75em) {@content}; //780px/16px= 48.75em
+    }
+
+    @if $device == tab-pot {
+        @media (max-width: 62.5em) {@content}; //1000px/16px= 62.5em
+    }
+    @if $device == tab-land {
+        @media (max-width: 75em) {@content}; //1200px/16px = 75em
+    }
+    @if $device == big-screen {
+        @media (min-width: 112.5em) {@content}; //1800px/16px = 112.5em
+    }
+}

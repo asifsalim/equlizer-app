@@ -9,7 +9,15 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    min-height: 100vh;
+    max-width: 100%;
+
 }
 body{
-    background-color: #f8f9fa;
+    background-image: url("images/figmabg.png");
+    font-family: 'Oswald', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-body-font;
+
 }

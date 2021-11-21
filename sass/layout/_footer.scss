@@ -1,0 +1,33 @@
+.footer{
+    margin-top: 15rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+    @include responsive (phone){
+        display:block;
+        
+         }
+
+    &__describtion{
+        width: 20rem;
+        @include responsive (phone){
+            width: 35rem;
+             }
+        &__para{
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+    }
+    &__iconbox{
+        align-self: center;
+        font-size: 3rem;
+        @include responsive (phone){
+           text-align: center;
+             }
+
+       & > * {
+        padding: 0 1rem;
+       }
+    }
+}
